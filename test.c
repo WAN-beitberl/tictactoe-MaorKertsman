@@ -1,6 +1,6 @@
 #include <stdio.h>
 int printBoard();
-int CheckBoardForWin();
+int checkBoardForWin();
 
 int main()
 {
@@ -17,7 +17,7 @@ int main()
         
     }
     
-    //Turn X
+    
     while(1){
         while(1){
             printf("[USERINPUT:X TURN] write row and then collum: --> ");
@@ -73,27 +73,27 @@ int printBoard(int mainArray[3][3])
 int checkBoardForWin(int mainArray[3][3])
 {
     int i;
-    for (i = 0; i < 0; i++)
+    for (i = 0; i < 3; i++)
     {
         if(mainArray[i][0] == mainArray[i][1] && mainArray[i][1] == mainArray[i][2] && mainArray[i][0] != 0)
         {
-            printf("===============\n WIN\n==============");
+            printf("===============\n     WIN     \n===============\n");
             return 0;
         }
         if(mainArray[0][i] == mainArray[1][i] && mainArray[1][i] == mainArray[2][i] && mainArray[0][i] != 0)
         {
-            printf("===============\n WIN\n==============");
+            printf("===============\n     WIN     \n===============\n");
             return 0;
         }
     }
     if(mainArray[0][0] == mainArray[1][1] && mainArray[1][1] == mainArray[2][2] && mainArray[0][0] != 0)
     {
-        printf("===============\n WIN\n==============");
+        printf("===============\n     WIN     \n===============\n");
         return 0;
     }
     if(mainArray[0][2] == mainArray[1][1] && mainArray[1][1] == mainArray[2][0] && mainArray[1][1] != 0)
     {
-        printf("===============\n WIN\n==============");
+        printf("===============\n     WIN     \n===============\n");
         return 0;
     }
     return 0;
