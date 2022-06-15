@@ -77,6 +77,12 @@ int resetBoard(int mainArray[3][3])
 
 int printBoard(int mainArray[3][3])
 {
+    /*
+        This function makes a visual board insted of the two dimensional int array
+        for value 0 the function prints -
+        for value 5 the function prints X
+        for value 8 the function prints O
+    */
     int i, j;
     for (i = 0; i < 3; i++)
     {
@@ -100,6 +106,12 @@ int printBoard(int mainArray[3][3])
 
 int checkBoardForWin(int mainArray[3][3])
 {
+    /*
+        Checks for every row and colloum if the value is the same
+        and if the value isn't 0 meaning that the space is already taken
+        then checks diagonal, after this, the function printing a wining massege
+        and resets the board
+    */
     int i;
     for (i = 0; i < 3; i++)
     {
