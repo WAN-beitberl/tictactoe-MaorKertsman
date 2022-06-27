@@ -22,6 +22,7 @@ int main()
             {
                 resetBoard(mainArray);
                 printBoard(mainArray);
+                //is it working
                 break;
             }
             //checking if space isn't taken
