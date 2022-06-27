@@ -17,10 +17,11 @@ int main()
         while (1) {
             printf("[USERINPUT:X TURN] write row and then collum: --> ");
             scanf_s("%d%d", &row, &collum);
-            if (row == 10) //developer tool for reseting the game board
+            if (row == 10) //developer tool for reseting the game board ok?
             {
                 resetBoard(mainArray);
                 printBoard(mainArray);
+                //is it working
                 break;
             }
             //checking if space isn't taken
